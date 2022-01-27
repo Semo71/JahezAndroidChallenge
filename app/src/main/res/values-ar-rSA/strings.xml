@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">جاهز</string>
+    <string name="home">الرئيسية</string>
+    <string name="something_went_wrong">حدث خطأ ما</string>
+    <string name="no_data_were_found">لم يتم العثور على البيانات</string>
+    <string name="offer">عرض</string>
+</resources>

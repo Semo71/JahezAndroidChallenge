@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jahez</string>
+    <string name="home">Home</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_data_were_found">No data were found</string>
+    <string name="offer">Offer</string>
+</resources>

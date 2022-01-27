@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0.5dp"
+    android:background="@color/white"
+    android:padding="15dp"
+    tools:context=".activity.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/restaurantImgV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/hoursTxtV"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTxtV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:text="McDonald's"
+        android:textColor="@color/gray10"
+        android:textDirection="locale"
+        app:layout_constraintEnd_toStartOf="@id/distanceImgV"
+        app:layout_constraintStart_toEndOf="@id/restaurantImgV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/distanceImgV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_location_gray_20dp"
+        app:layout_constraintBottom_toBottomOf="@id/distanceTxtV"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/distanceTxtV"
+        app:layout_constraintTop_toBottomOf="@id/distanceTxtV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distanceTxtV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:text="15"
+        android:textColor="@color/gray8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptionTxtV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:text="Fast Food"
+        android:textColor="@color/gray8"
+        android:textDirection="locale"
+        app:layout_constraintEnd_toStartOf="@id/offerTxtV"
+        app:layout_constraintStart_toEndOf="@id/restaurantImgV"
+        app:layout_constraintTop_toBottomOf="@id/titleTxtV" />
+
+    <TextView
+        android:id="@+id/offerTxtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent"
+        android:lines="1"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:text="@string/offer"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTxtV" />
+
+    <TextView
+        android:id="@+id/hoursTxtV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:lines="1"
+        android:text="8:30 AM - 11:30 PM"
+        android:textColor="@color/gray8"
+        android:textDirection="locale"
+        app:layout_constraintEnd_toStartOf="@id/ratingBar"
+        app:layout_constraintStart_toEndOf="@id/restaurantImgV"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTxtV" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:theme="@style/RatingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTxtV" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
